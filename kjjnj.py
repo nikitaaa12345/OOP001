@@ -15,6 +15,13 @@ class Suns(Dzivnieki):
     def skanja(self):
         print("Vau vau")
 
+class Kakjis(Dzivnieki):
+    def __init__(self, vards, kajas):
+        super().__init__(vards, kajas)
+        self.vards = "Minkans " + self.vards
+    def skanja(self):
+        print("MurMjau")
+
 d1=Dzivnieki("Gauja",4)
 print(d1)
 d1.skanja()
@@ -23,4 +30,23 @@ d1.skanja()
 s1=Suns("Reksis",4)
 print(s1)
 s1.skanja()
+
+s2=Kakjis("Muris", 4)
+print(s2)
+s2.skanja()
+dzivniekuSaraksts=[]
+dzivniekuSaraksts.append(Suns("Reksis", 3))
+dzivniekuSaraksts.append(Suns("Volvis",4))
+dzivniekuSaraksts.append(Suns("Caps", 4))
+dzivniekuSaraksts.append(Kakjis("Murcis", 4))
+dzivniekuSaraksts.append(Kakjis("Burkaans", 4))
+dzivniekuSaraksts.append(Dzivnieki("Gauja", 4))
+
+
+
+print("#####################")
+for dzivnieks in dzivniekuSaraksts:
+    print(dzivnieks)
+    dzivnieks.skanja
+
 
