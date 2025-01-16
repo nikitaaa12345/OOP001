@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 
-class Dzivnieki:
+class Dzivnieki(ABC):
     def __init__(self, vards,kajas):
         self.vards=vards
         self.kajas=kajas
